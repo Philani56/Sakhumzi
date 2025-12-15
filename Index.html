@@ -1,0 +1,1618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <title>Sakhumzi Restaurant | Best African Restaurant in Soweto and Johannesburg</title>
+
+   <!-- SEO -->
+  <meta name="description" content="Sakhumzi provides top-notch services with professionalism and excellence. Explore our locations, services, and book now!">
+  <meta name="keywords" content="Sakhumzi, services, Vilakazi, Phefeni, booking, quality services, local services">
+  <meta name="author" content="Sakhumzi Team">
+
+  <!-- Open Graph / Social Media -->
+  <meta property="og:title" content="Sakhumzi - Quality Services for You">
+  <meta property="og:description" content="Discover Sakhumzi's professional services and convenient locations. Book your appointment today!">
+  <meta property="og:image" content="">
+  <meta property="og:url" content="">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- ✅ Font Awesome v6.5.0 CDN (Fixes icon issue) -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+/>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<!-- Navbar Section -->
+<nav>
+  <div class="logo">
+    <a href="#"><img src="assets/img/logo.png" alt="Sakhumzi Restaurant Logo"></a>
+  </div>
+
+<div class="burger" onclick="toggleMenu()">
+    ☰
+</div>
+
+
+  <div class="nav-links" id="navMenu">
+    <a href="#">Home</a>
+    <a href="#about-section">About</a>
+    <a href="#locations1">Locations</a>
+    <a href="#menus">Menu</a>
+    <a href="#bookings">Bookings</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#testimonials">Testimonials</a>
+    <a href="#contact">Contact</a>
+    <a href="#contact" class="book-now">Book Now</a>
+  </div>
+</nav>
+
+<script>
+  const burger = document.querySelector('.burger');
+  const navMenu = document.querySelector('.nav-links');
+  const navLinks = document.querySelectorAll('.nav-links a');
+
+  // Toggle menu
+  burger.addEventListener('click', () => {
+    burger.classList.toggle('active');  
+    navMenu.classList.toggle('active');
+  });
+
+  // Close menu when clicking a nav link
+  navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      burger.classList.remove('active');
+      navMenu.classList.remove('active');
+    });
+  });
+</script>
+
+<!-- Hero Slider Section -->
+<section class="hero-slider"> 
+  <div class="slide active"><img src="assets/img/meaty.jpg" alt="Sakhumzi Restaurant View 1">
+  </div> 
+  <div class="slide"><img src="assets/img/sakhumzi-restaurant-soweto-african-cuisine-11.jpg" alt="Sakhumzi Restaurant View 2"></div> 
+  <div class="slide"><img src="assets/img/sakhumzi-restaurant-soweto-african-cuisine-6.jpg" alt="Sakhumzi Restaurant View 3"></div> 
+  <div class="overlay">
+  </div> 
+</section>  
+
+<!-- Welcome Section -->
+<section class="welcome-section">
+    <div class="welcome-text">
+      <h1 >Welcome to Sakhumzi Restaurant</h1>
+      <p>We're not just a restaurant; we're a <strong>proudly South African family-owned spot</strong> with three beautiful homes!</p>
+      <p><strong>Our doors are wide open</strong> to everyone who loves <strong>lekker food</strong> and a vibe that makes you feel like family.</p>
+      <p>We dish up <strong>authentic African cuisine</strong> made straight from the heart, celebrating the flavours and stories that truly bring people together. Whether you're a local, a visitor from across Mzansi, or joining us from overseas, come through!</p>
+      <p class="welcome-underline"><strong>You're home here.</strong></p>
+    </div>
+    <br>
+    <button class="book-btn">Book Now</button>
+</section>
+
+<!-- About / Our Story Section -->
+<section class="about-section">
+    <div class="about-header" id="about-section">
+      <h1>About Us</h1>
+      <p>Celebrating heritage, culture, and the spirit of ubuntu at the heart of Vilakazi Street.</p>
+    </div>
+
+    <!-- Heritage & Sakhumzi’s Origin -->
+    <div class="about-content">
+      <img src="assets/img/about.jpg" alt="Sakhumzi Heritage">
+      <div class="about-text">
+        <h2>Heritage & Sakhumzi’s Origin</h2>
+        <p>In 2001, Sakhumzi formalised the shebeen into a restaurant. The house was converted, but the <strong>original doors, walls, and flooring</strong> were kept — preserving that authentic, lived-in feel that tells the story of Soweto’s resilience.</p>
+        <p>Years later, this old home is still buzzing. People come from across Mzansi and the world to experience <strong>true township flavour</strong> and <em>ubuntu</em> in one of Vilakazi Street’s most iconic spots.</p>
+        <p>And best of all? <strong>That deep-rooted tree is still standing strong</strong> — right where our story began.</p>
+      </div>
+    </div>
+
+    <!-- Philosophy & Culture -->
+    <div class="about-content">
+      <div class="about-text">
+        <h2>Our Philosophy & Culture</h2>
+        <p>At Sakhumzi, food is more than just a meal — it’s a celebration of <strong>community, togetherness, and heritage</strong>. Every dish we serve carries the warmth of home and the stories of our people.</p>
+        <p>We believe in <em>ubuntu</em> — “I am because we are.” From our kitchen team to our guests, everyone who walks through our doors becomes part of our family.</p>
+        <p>Whether you’re enjoying a traditional plate or simply soaking up the vibe, you’re experiencing a piece of Soweto’s living culture — <strong>served with love and soul.</strong></p>
+      </div>
+      <img src="assets/img/culture.jpg" alt="Sakhumzi Culture">
+    </div>
+</section>
+
+<!-- Locations Section -->
+
+<main class="container" id="locations1">
+  <h1 class="center-title">Our Locations</h1>
+
+  <!-- Tabs -->
+  <div class="location-tabs" id="locations">
+    <button class="tab-btn active" data-target="soweto">Vilakazi</button>
+    <button class="tab-btn" data-target="phefeni">Phefeni</button>
+    <button class="tab-btn" data-target="zoo-lake">Zoo Lake</button>
+  </div>
+
+  <!-- VILAKAZI -->
+  <section class="location-section active" id="soweto">
+    <h2><strong style="color: #c5863a;">Sakhumzi Vilakazi:</strong> Where it all began.</h2>
+
+    <div class="zoolake-row">
+      <div class="zoolake-box">
+        <img src="assets/img/interim.jpg" alt="Zoo Lake Johannesburg" />
+      </div>
+      <div class="zoolake-text">
+        <p>This is where it all began. Sakhumzi Vilakazi started in 2001, providing a home-away-from-home feeling. Where every customer is referred to as Champs, short for Champion. The restaurant is situated on Vilakazi Street, the heart of South African history. It is famous for its legendary African cuisine buffet, which is worth <strong style="color: black;">R270pp</strong> for <strong style="color: black;">2 hours</strong> starting from <strong style="color: black;">11:00- 21:00.</strong></p>
+      </div>
+    </div>
+
+    <div class="zoolake-row lower reverse">
+      <div class="zoolake-box small">
+        <img src="assets/img/vilakazi-1.jpg" alt="Zoo Lake Baked Goods" />
+      </div>
+
+      <div class="zoolake-left">
+        <h3><strong><u>We are happy to host your event</u></strong></h3>
+        <p>We have hosted many events; we'd like to host yours, too. Come through, the place where we serve both a vibe and food. Whether you're planning a quiet family meal or hosting a major event like a bridal shower, a birthday celebration, a farewell, or a company function, we've got the space and the vibe for you.</p>
+        <br>
+        
+        <div class="button-group">
+          <a href="#contact" class="cta-button" onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });">Enquire</a>
+          <a href="mailto:dine@sakhumzi.co.za" target="_blank" class="cta-button">Book Now</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="zoolake-row">
+      <div class="zoolake-box">
+        <img src="assets/img/vilakazi-event.jpeg" alt="Zoo Lake Johannesburg" />
+      </div>
+      <div class="zoolake-text">
+        <h3><strong><u>Weekends Vibes</u></strong></h3>
+        <p>Every weekend, we have a DJ on the decks serving vibes. Even with music, you can still catch up with a Champ you are dining with, the volume is just right.</p>
+        <p>You deserve to unwind and feed your soul.</p>
+      </div>
+    </div>
+
+    <div class="menu-1">
+      <a href="pdf/Vilakazi.pdf" target="_blank" class="read-more">Our Menu</a>
+    </div>
+
+    <!-- Contact Section -->
+    <section class="contact-section1">
+      <div class="contact-container1">
+        <h3><strong><u>Contact Us</u></strong></h3>
+        
+        <div class="map-wrapper1">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3578.6914049350967!2d27.9097152!3d-26.239214800000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e95a745a20bbf21%3A0xd5c116f9fc294ae3!2sSakhumzi%20Restaurant!5e0!3m2!1sen!2sza!4v1764651622246!5m2!1sen!2sza" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        
+        <div class="contact-info1">
+          <p><strong>Call:</strong> <a href="tel:0115361379">011 536 1379</a></p>
+          <p><strong>Email:</strong> <a href="mailto:dine@sakhumzi.co.za">dine@sakhumzi.co.za</a></p>
+        </div>
+
+        <br/>
+        <p class="welcome-text">We are excited to welcome you to the Sakhumzi family right here at Soweto Vilakazi!</p>
+      </div>
+    </section>
+  </section>
+
+  <!-- PHEFENI -->
+  <section class="location-section" id="phefeni">
+    <h2><strong style="color: #c5863a;">Phefeni:</strong> For the young at heart.</h2>
+
+    <div class="zoolake-row">
+      <div class="zoolake-box">
+        <img src="assets/img/phefeni-0.jpg" alt="Phefeni Restaurant" />
+      </div>
+      <div class="zoolake-text">
+        <p>The Sakhumzi Phefeni Branch aims to deliver a customer experience worthy of its name and reputation. The restaurant offers a variety of menu items, including main meals and baked goods/desserts, and caters to large bookings or functions. Buffets here are strictly bookings-based, from R270 for adults.</p>
+        
+        <div class="button-group">
+          <a href="#contact" class="cta-button" onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });">Enquire</a>
+          <a href="mailto:dine@sakhumzi.co.za" target="_blank" class="cta-button">Book Now</a>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="zoolake-row lower reverse">
+      <div class="zoolake-box small">
+        <img src="assets/img/phef.jpg" alt="Phefeni Events" />
+      </div>
+
+      <div class="zoolake-left">
+        <h3><strong><u>We are happy to host your event</u></strong></h3>
+        <p>Come through, the place where we serve both an experience and food. Whether you're planning a quiet family meal or hosting a major event like a bridal shower, a big birthday celebration, a farewell, or a company function, we've got the space and the vibe for you.</p>
+          
+     
+        
+        <div class="button-group">
+          <a href="#contact" class="cta-button" onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });">Enquire</a>
+          <a href="mailto:phefeni@sakhumzi.co.za" target="_blank" class="cta-button">Book Now</a>
+        </div>
+        <br/>
+      <p>From time to time, we host unforgettable parties that'll keep you coming back for more!</p>
+      <p>Follow us on social media to stay in the loop we can't wait to see you at the next one!</p>
+
+
+    </div>
+ </div>
+    
+
+
+    <div class="zoolake-row">
+      <div class="zoolake-box">
+        <img src="assets/img/cake.jpeg" alt="Baked Goods" />
+      </div>
+      <div class="zoolake-text">
+        <h3><strong><u>We bake up a storm</u></strong></h3>
+        <p>We offer a wide variety of freshly baked goods and also create customised cakes and treats made just for you.</p>
+        <p>Come taste the magic while it's still warm! Digital Menu coming soon…</p>
+      </div>
+    </div>
+
+    <div class="menu-1">
+      <a href="pdf/Phefeni_Menu.pdf" target="_blank" class="read-more">Our Menu</a>
+    </div>
+
+    <!-- Contact Section -->
+    <section class="contact-section1">
+      <div class="contact-container1">
+        <h3><strong><u>Contact Us</u></strong></h3>
+        
+        <div class="map-wrapper1">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3578.769367001582!2d27.9021995!3d-26.236682399999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e950dec3077eb4f%3A0xd85b517c4581061f!2sSakhumzi%20Phefeni!5e0!3m2!1sen!2sza!4v1764704354566!5m2!1sen!2sza" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        
+        <div class="contact-info1">
+          <p><strong>Call:</strong> <a href="tel:0115361379">011 536 1379</a></p>
+          <p><strong>Email:</strong> <a href="mailto:phefeni@sakhumzi.co.za">phefeni@sakhumzi.co.za</a></p>
+        </div>
+
+        <br/>
+        <p class="welcome-text">We are excited to welcome you to the Sakhumzi family right here at Phefeni!</p>
+      </div>
+    </section>
+  </section>
+
+  <!-- ZOO LAKE -->
+  <section class="location-section" id="zoo-lake">
+    <h2><strong style="color: #c5863a;">Sakhumzi Zoo Lake at Parkview, Joburg:</strong> Bringing the flavour to the city's green spaces.</h2>
+
+    <div class="zoolake-row">
+      <div class="zoolake-box">
+        <img src="assets/img/zoo0.jpeg" alt="Zoo Lake Johannesburg" />
+      </div>
+      <div class="zoolake-text">
+        <p>Sakhumzi Restaurant, in a partnership with Joburg City Parks & Zoo (JCPZ), has celebrated the official grand opening of our brand's additional home at Zoo Lake, the Head Office of all Sakhumzi Branches, which also encompasses a training facility.</p>
+        <p>Our visionary leader, Sakhumzi Maqubela, and City Parks have joined forces to transform this park eatery into a vibrant new destination, marking a massive milestone for growth and future developments.</p>
+        <p>The legendary buffet is available from 11:00 am to 21:00pm for R350, drinks are not included. Strictly booking-based, minimum of 5 per group.</p>
+        
+        <div class="button-group">
+          <a href="#contact" class="cta-button" onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });">Enquire</a>
+          <a href="mailto:zoolake@sakhumzi.co.za" target="_blank" class="cta-button">Book Now</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="zoolake-row lower">
+      <div class="zoolake-left">
+        <h3><strong><u>Looking for a burst of flavour</u></strong></h3>
+        <p>Come through and experience the lekker, tranquil setting that's perfect for any occasion. Whether you're planning a quiet family meal or hosting a major event like a bridal shower, a birthday celebration, a wedding, a farewell, a concert, or a company function, we've got the space and the atmosphere for you.</p>
+        
+        <div class="button-group">
+          <a href="#contact" class="cta-button" onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });">Enquire</a>
+          <a href="mailto:zoolake@sakhumzi.co.za" target="_blank" class="cta-button">Book Now</a>
+        </div>
+      </div>
+      
+      <div class="zoolake-box small">
+        <img src="assets/img/zoo-lake-events.jpg" alt="Zoo Lake Events" />
+      </div>
+    </div>
+
+    <div class="zoolake-row">
+      <div class="zoolake-box">
+        <img src="assets/img/baked-zoo-lake.jpg" alt="Zoo Lake Baked Goods" />
+      </div>
+      <div class="zoolake-text">
+        <h3><strong><u>There's something new in the oven!</u></strong></h3>
+        <p>We've added a fresh twist to our offering, a variety of mouth-watering baked goods that'll have you coming back for more.</p>
+        <p>Come taste the magic while it's still warm!</p>
+        <p>Digital Menu coming soon…</p>
+      </div>
+    </div>
+
+    <div class="zoolake-row lower"> 
+      <div class="zoolake-left">
+        <h3><strong><u>We also offer a spit braai</u></strong></h3>
+        <p>Enjoy the full experience with our spit braai service, available upon request.</p>
+        <div class="button-group">
+          <a href="#contact" class="cta-button" onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });">Enquire</a>
+        </div>
+      </div>
+      <div class="zoolake-box small">
+        <img src="assets/img/spit-braai.jpg" alt="Spit Braai" />
+      </div>
+    </div>
+
+    <div class="zoolake-row">
+      <div class="zoolake-box">
+        <img src="assets/img/train.jpg" alt="Training Academy" />
+      </div>
+      <div class="zoolake-text">
+        <h3><strong><u>Training Academy</u></strong></h3>
+        <p>Looking for a training venue? We've got the perfect space for your company. Book your spot today!</p>
+        
+        <div class="button-group">
+          <a href="#contact" class="cta-button" onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });">Enquire</a>
+          <a href="mailto:zoolake@sakhumzi.co.za" target="_blank" class="cta-button">Book Now</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-1">
+      <a href="pdf/Phefeni_Menu.pdf" target="_blank" class="read-more">Our Menu</a>
+    </div>
+
+    <!-- Contact Section -->
+    <section class="contact-section1">
+      <div class="contact-container1">
+        <h3><strong><u>Contact Us</u></strong></h3>
+        
+        <div class="map-wrapper1">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3581.210820863186!2d28.0293583!3d-26.1572627!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e950d07aae32573%3A0xb6a0ab129cba7222!2sSakhumzi%20Zoo%20Lake!5e0!3m2!1sen!2sza!4v1765124351486!5m2!1sen!2sza" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        
+        <div class="contact-info1">
+          <p><strong>Call:</strong> <a href="tel:0100851889">010 085 1889</a></p>
+          <p><strong>Email:</strong> <a href="mailto:zoolake@sakhumzi.co.za">zoolake@sakhumzi.co.za</a></p>
+        </div>
+
+        <br/>
+        <p class="welcome-text">We are excited to welcome you to the Sakhumzi family right here at Zoo Lake!</p>
+      </div>
+    </section>
+  </section>
+</main>
+
+<style>
+  /* Base Styles */
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    font-size: 16px;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+  }
+  
+  .center-title {
+    text-align: center;
+    margin: 25px 0;
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  /* Tabs */
+  .location-tabs {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 25px 0;
+  }
+  
+  .tab-btn {
+    padding: 10px 20px;
+    background: #f5f5f5;
+    border: none;
+    border-radius: 25px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .tab-btn.active {
+    background: linear-gradient(135deg, #c5863a, #8f5b1a);
+    color: white;
+  }
+  
+  /* Location Sections */
+  .location-section {
+    display: none;
+    animation: fadeIn 0.5s ease;
+  }
+  
+  .location-section.active {
+    display: block;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  /* Headers - Made Smaller */
+  .location-section h2 {
+    font-size: 1.5rem;
+    margin: 25px 0 15px;
+    line-height: 1.3;
+    text-align: center;
+  }
+  
+  /* Zoolake Row Layout */
+  .zoolake-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 25px;
+    margin: 30px 0;
+  }
+  
+  .zoolake-row.lower {
+    margin: 40px 0;
+  }
+  
+  .zoolake-box {
+    flex: 1;
+    min-width: 280px;
+  }
+  
+  .zoolake-box.small {
+    flex: 0.8;
+  }
+  
+  .zoolake-box img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  }
+  
+  .zoolake-text, .zoolake-left {
+    flex: 1;
+    min-width: 280px;
+  }
+  
+  .zoolake-text h3, .zoolake-left h3 {
+    color: #c5863a;
+    margin-bottom: 12px;
+    font-size: 1.3rem;
+  }
+  
+  .zoolake-text p, .zoolake-left p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 12px;
+  }
+  
+  .reverse {
+    flex-direction: row-reverse;
+  }
+  
+  /* Buttons - Made Smaller */
+  .button-group {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 18px;
+  }
+  
+  .cta-button {
+    display: inline-block;
+    padding: 10px 22px;
+    background: linear-gradient(135deg, #c5863a, #8f5b1a);
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 25px;
+    text-decoration: none;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+    transition: all 0.3s ease;
+    text-align: center;
+  }
+  
+  .cta-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  }
+  
+  /* Menu Button - Made Smaller */
+  .menu-1 {
+    text-align: center;
+    margin: 30px 0;
+  }
+  
+  .read-more {
+    display: inline-block;
+    padding: 12px 30px;
+    background: linear-gradient(135deg, #d4af37, #c5863a);
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: all 0.35s ease;
+  }
+  
+  .read-more:hover {
+    transform: translateY(-2px);
+    background: linear-gradient(135deg, #dba164, #b87d35);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  }
+  
+  /* Contact Section - Made Smaller */
+  .contact-section1 {
+    margin: 40px 0;
+    padding: 30px 15px;
+    background: #f9f9f9;
+    border-radius: 8px;
+  }
+  
+  .contact-container1 {
+    max-width: 850px;
+    margin: 0 auto;
+  }
+  
+  .contact-container1 h3 {
+    text-align: center;
+    color: #c5863a;
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+  }
+  
+  .map-wrapper1 {
+    width: 100%;
+    margin: 25px 0;
+  }
+  
+  .map-wrapper1 iframe {
+    width: 100%;
+    height: 350px;
+    border: 0;
+    border-radius: 8px;
+  }
+  
+  .contact-info1 {
+    text-align: center;
+    margin: 25px 0;
+  }
+  
+  .contact-info1 p {
+    font-size: 1rem;
+    margin: 8px 0;
+  }
+  
+  .contact-info1 a {
+    color: #c5863a;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-size: 1rem;
+  }
+  
+  .contact-info1 a:hover {
+    color: #8f5b1a;
+    text-decoration: underline;
+  }
+  
+  .welcome-text {
+    font-size: 1.1rem;
+    text-align: center;
+    color: #333;
+    font-weight: 500;
+    margin-top: 15px;
+  }
+  
+  .info-text {
+    text-align: center;
+    margin: 15px 0;
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  /* Mobile Responsive Styles - Made Everything Smaller */
+  @media (max-width: 768px) {
+    body {
+      font-size: 15px;
+    }
+    
+    .container {
+      padding: 12px;
+    }
+    
+    .center-title {
+      font-size: 1.6rem;
+      margin: 20px 0;
+    }
+    
+    .location-tabs {
+      flex-direction: column;
+      align-items: center;
+      gap: 6px;
+      margin: 20px 0;
+    }
+    
+    .tab-btn {
+      width: 85%;
+      max-width: 220px;
+      padding: 8px 16px;
+      font-size: 14px;
+    }
+    
+    .location-section h2 {
+      font-size: 1.3rem;
+      margin: 20px 0 12px;
+      padding: 0 8px;
+    }
+    
+    .zoolake-row {
+      flex-direction: column;
+      gap: 15px;
+      margin: 25px 0;
+    }
+    
+    .zoolake-row.lower {
+      margin: 30px 0;
+    }
+    
+    .zoolake-row.reverse {
+      flex-direction: column;
+    }
+    
+    .zoolake-box, .zoolake-text, .zoolake-left {
+      min-width: 100%;
+      padding: 0 5px;
+    }
+    
+    .zoolake-box img {
+      border-radius: 6px;
+    }
+    
+    .zoolake-text h3, .zoolake-left h3 {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+    
+    .zoolake-text p, .zoolake-left p {
+      font-size: 0.95rem;
+      line-height: 1.5;
+      margin-bottom: 10px;
+    }
+    
+    .button-group {
+      gap: 10px;
+      margin-top: 15px;
+      justify-content: center;
+    }
+    
+    .cta-button {
+      padding: 8px 18px;
+      font-size: 14px;
+      min-width: 130px;
+      border-radius: 20px;
+    }
+    
+    .contact-section1 {
+      margin: 30px 0;
+      padding: 25px 12px;
+    }
+    
+    .contact-container1 h3 {
+      font-size: 1.3rem;
+      margin-bottom: 20px;
+    }
+    
+    .map-wrapper1 {
+      margin: 20px 0;
+    }
+    
+    .map-wrapper1 iframe {
+      height: 250px;
+    }
+    
+    .contact-info1 {
+      margin: 20px 0;
+    }
+    
+    .contact-info1 p {
+      font-size: 0.95rem;
+      margin: 6px 0;
+    }
+    
+    .contact-info1 a {
+      font-size: 0.95rem;
+    }
+    
+    .menu-1 {
+      margin: 25px 0;
+    }
+    
+    .read-more {
+      padding: 10px 25px;
+      font-size: 15px;
+      border-radius: 20px;
+    }
+    
+    .welcome-text {
+      font-size: 1rem;
+      margin-top: 12px;
+    }
+    
+    .info-text {
+      font-size: 0.95rem;
+      margin: 12px 0;
+    }
+  }
+  
+  /* Extra small devices - Even Smaller */
+  @media (max-width: 480px) {
+    body {
+      font-size: 14px;
+    }
+    
+    .container {
+      padding: 10px;
+    }
+    
+    .center-title {
+      font-size: 1.4rem;
+      margin: 15px 0;
+    }
+    
+    .tab-btn {
+      width: 90%;
+      max-width: 200px;
+      padding: 7px 14px;
+      font-size: 13px;
+      border-radius: 20px;
+    }
+    
+    .location-section h2 {
+      font-size: 1.1rem;
+      margin: 15px 0 10px;
+    }
+    
+    .zoolake-row {
+      gap: 12px;
+      margin: 20px 0;
+    }
+    
+    .zoolake-row.lower {
+      margin: 25px 0;
+    }
+    
+    .zoolake-text h3, .zoolake-left h3 {
+      font-size: 1.1rem;
+    }
+    
+    .zoolake-text p, .zoolake-left p {
+      font-size: 0.9rem;
+      line-height: 1.4;
+    }
+    
+    .button-group {
+      gap: 8px;
+      margin-top: 12px;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .cta-button {
+      padding: 7px 16px;
+      font-size: 13px;
+      min-width: 140px;
+      border-radius: 18px;
+      width: 85%;
+      max-width: 200px;
+    }
+    
+    .contact-section1 {
+      margin: 25px 0;
+      padding: 20px 10px;
+    }
+    
+    .contact-container1 h3 {
+      font-size: 1.2rem;
+      margin-bottom: 15px;
+    }
+    
+    .map-wrapper1 iframe {
+      height: 200px;
+    }
+    
+    .contact-info1 p {
+      font-size: 0.9rem;
+    }
+    
+    .contact-info1 a {
+      font-size: 0.9rem;
+    }
+    
+    .read-more {
+      padding: 8px 20px;
+      font-size: 14px;
+      border-radius: 18px;
+    }
+    
+    .welcome-text {
+      font-size: 0.9rem;
+    }
+    
+    .info-text {
+      font-size: 0.9rem;
+    }
+  }
+  
+  /* Very small devices (iPhone SE, etc.) */
+  @media (max-width: 360px) {
+    .center-title {
+      font-size: 1.3rem;
+    }
+    
+    .location-section h2 {
+      font-size: 1rem;
+    }
+    
+    .tab-btn {
+      font-size: 12px;
+      padding: 6px 12px;
+    }
+    
+    .zoolake-text h3, .zoolake-left h3 {
+      font-size: 1rem;
+    }
+    
+    .zoolake-text p, .zoolake-left p {
+      font-size: 0.85rem;
+    }
+    
+    .cta-button {
+      font-size: 12px;
+      padding: 6px 14px;
+      min-width: 120px;
+    }
+    
+    .read-more {
+      font-size: 13px;
+      padding: 7px 18px;
+    }
+    
+    .contact-container1 h3 {
+      font-size: 1.1rem;
+    }
+    
+    .map-wrapper1 iframe {
+      height: 180px;
+    }
+  }
+</style>
+
+<script>
+  // Tab functionality
+  document.addEventListener('DOMContentLoaded', function() {
+    const tabButtons = document.querySelectorAll('.tab-btn');
+    const locationSections = document.querySelectorAll('.location-section');
+    
+    tabButtons.forEach(button => {
+      button.addEventListener('click', function() {
+        const targetId = this.getAttribute('data-target');
+        
+        // Update active tab
+        tabButtons.forEach(btn => btn.classList.remove('active'));
+        this.classList.add('active');
+        
+        // Show selected section
+        locationSections.forEach(section => {
+          section.classList.remove('active');
+          if (section.id === targetId) {
+            section.classList.add('active');
+          }
+        });
+        
+        // Smooth scroll to top of section
+        document.getElementById(targetId).scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        });
+      });
+    });
+    
+    // Initialize first section as active
+    if (locationSections.length > 0) {
+      locationSections[0].classList.add('active');
+    }
+  });
+</script>
+
+<style>
+  .menu-text {
+  text-align: center;
+  padding: 40px 20px;
+}
+.menu-text h1 { 
+  font-size: clamp(24px, 5vw, 32px); /* Responsive font size */
+  margin-bottom: 12px; 
+}
+
+.slider-wrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding: 30px 0;
+  box-sizing: border-box;
+}
+
+.cards-container {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 20px 40px; /* Reduced padding for mobile */
+  box-sizing: border-box;
+}
+.cards-container::-webkit-scrollbar { display: none; }
+
+.card {
+  min-width: 220px;  /* flexible width */
+  max-width: 300px;  /* reasonable max for bigger screens */
+  background: #fff;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+  transition: transform .28s ease;
+  flex-shrink: 0;
+}
+.card:hover { transform: translateY(-6px); }
+
+.card img { 
+  width: 100%; 
+  height: 180px; 
+  object-fit: cover; 
+  display:block; 
+}
+.card-content { padding: 12px; }
+.card-content h3 { 
+  margin:0 0 6px; 
+  font-size: clamp(14px, 3vw, 18px); 
+}
+.card-content p { 
+  margin:0 0 10px; 
+  color:#444; 
+  font-size: clamp(12px, 2.5vw, 14px); 
+  line-height:1.45; 
+}
+
+.card-buttons { display:flex; gap:8px; justify-content:space-between; align-items:center; }
+
+.read-more {
+  padding: 8px 14px; 
+  background:#333; 
+  color:#fff; 
+  border-radius:20px; 
+  text-decoration:none;
+  font-size:13px;
+}
+
+.book-now {
+  padding: 8px 14px; 
+  background:#d35400; 
+  color:#fff; 
+  border-radius:20px; 
+  border:0; 
+  cursor:pointer;
+  font-size:13px;
+}
+.book-now:hover { background:#e67e22; }
+
+.slide-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #c5863a;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 22px;
+  z-index: 999;
+  opacity: 0.95;
+  transition: transform .15s ease, opacity .15s ease;
+  pointer-events: auto;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+}
+.slide-arrow:hover { transform: translateY(-50%) scale(1.05); opacity: 1; }
+.slide-arrow.left { left: 10px; }
+.slide-arrow.right { right: 10px; }
+
+@media (max-width: 640px){
+  .card { min-width: 180px; max-width: 240px; }
+  .cards-container { padding: 16px 20px; } /* reduce horizontal padding */
+  .slide-arrow { padding:8px 10px; font-size:18px; }
+}
+
+</style>
+
+<section class="menu-text" id="menus">
+  <h1>WHAT'S ON AT SAKHUMZI</h1>
+
+  <div class="slider-wrapper">
+
+    <!-- Left Arrow -->
+    <button id="arrowLeft" class="slide-arrow left" type="button" aria-label="Scroll left">&#10094;</button>
+
+    <!-- Scrollable Row (keep IDs for JS) -->
+    <div class="cards-container" id="menuSlider">
+
+      <!-- CARD 1 -->
+      <div class="card">
+        <img src="assets/img/3.jpg" alt="Chief's Boma Buffet">
+        <div class="card-content">
+          <h3>Sakhumzi Food Menu</h3>
+          <p>Enjoy authentic African dining at Sakhumzi Zoolake. Tuck into our delicious lunch or dinner buffet with vibrant décor and an atmosphere. Every meal is a celebration of culture, flavour, and togetherness.</p>
+          <div class="card-buttons">
+            <a href="pdf/Sakhumzi-Food-Menu.pdf" target="_blank" class="read-more">Read More</a>
+                        <a href="mailto:dine@sakhumzi.co.za" target="_blank" 
+            style="
+            display:inline-block;
+            padding:12px 28px;
+            background:linear-gradient(135deg, #c5863a, #8f5b1a);
+            color:#fff;
+            font-family:Poppins, sans-serif;
+            font-size:16px;
+            font-weight:600;
+            border-radius:50px;
+            text-decoration:none;
+            box-shadow:0 4px 12px rgba(0,0,0,0.2);">
+   Book Now
+</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 2 -->
+      <div class="card">
+        <img src="https://images.pexels.com/photos/2291367/pexels-photo-2291367.jpeg" alt="Epsom Corporate Year End Buffet">
+        <div class="card-content">
+          <h3>Sakhumzi Legendary Buffet</h3>
+          <p>Discover the vibrant flavours of Sakhumzi Zoolake with our signature buffet menu a perfect blend of African cuisine, warm ambiance, and great company. Come hungry, leave inspired by the true taste of Soweto.</p>
+          <div class="card-buttons">
+            <a href="pdf/DOC-20251120-WA0010..pdf" target="_blank" class="read-more">Read More</a>
+                        <a href="mailto:dine@sakhumzi.co.za" target="_blank" 
+            style="
+            display:inline-block;
+            padding:12px 28px;
+            background:linear-gradient(135deg, #c5863a, #8f5b1a);
+            color:#fff;
+            font-family:Poppins, sans-serif;
+            font-size:16px;
+            font-weight:600;
+            border-radius:50px;
+            text-decoration:none;
+            box-shadow:0 4px 12px rgba(0,0,0,0.2);">
+   Book Now
+</a>   
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 3 -->
+      <div class="card">
+        <img src="https://images.pexels.com/photos/31093570/pexels-photo-31093570.jpeg" alt="Wine List">
+        <div class="card-content">
+          <h3>Sakhumzi Wine List</h3>
+          <p>Explore our Sakhumzi Wine List, carefully offering a selection of fine wines to complement your dining experience. From smooth reds to crisp whites, every bottle is thoughtfully chosen to elevate experiences at Sakhumzi.</p>
+          <div class="card-buttons">
+            <a href="pdf/Sakhumzi-Zoolake-Wine.pdf" target="_blank" class="read-more">Read More</a>
+                        <a href="mailto:dine@sakhumzi.co.za" target="_blank" 
+            style="
+            display:inline-block;
+            padding:12px 28px;
+            background:linear-gradient(135deg, #c5863a, #8f5b1a);
+            color:#fff;
+            font-family:Poppins, sans-serif;
+            font-size:16px;
+            font-weight:600;
+            border-radius:50px;
+            text-decoration:none;
+            box-shadow:0 4px 12px rgba(0,0,0,0.2);">
+   Book Now
+</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 4 -->
+      <div class="card">
+        <img src="assets/img/unnamed (1).jpg" alt="Corporate Offering">
+        <div class="card-content">
+          <h3>Sakhumzi Restaurant Corporate Offering</h3>
+          <p>We’d love to warmly host you and your team for your corporate year-end. Let us take care of the meals and the experience while you enjoy the occasion with your team.</p>
+          <div class="card-buttons">
+                        <a href="mailto:dine@sakhumzi.co.za" target="_blank" 
+            style="
+            display:inline-block;
+            padding:12px 28px;
+            background:linear-gradient(135deg, #c5863a, #8f5b1a);
+            color:#fff;
+            font-family:Poppins, sans-serif;
+            font-size:16px;
+            font-weight:600;
+            border-radius:50px;
+            text-decoration:none;
+            box-shadow:0 4px 12px rgba(0,0,0,0.2);">
+   Book Now
+</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 5 -->
+      <div class="card">
+        <img src="assets/img/gym.jpg" alt="Fitness">
+        <div class="card-content">
+          <h3>Sakhumzi Zoo Lake - Breakfast Club</h3>
+          <p>Looking for a space to host a yoga class or fitness activity? We’ve got you. At Sakhumzi Zoo Lake, we offer a welcoming spot for fitness fans. After the workout, enjoy our breakfast special to refuel.</p>
+          <div class="card-buttons">
+                        <a href="mailto:dine@sakhumzi.co.za" target="_blank" 
+            style="
+            display:inline-block;
+            padding:12px 28px;
+            background:linear-gradient(135deg, #c5863a, #8f5b1a);
+            color:#fff;
+            font-family:Poppins, sans-serif;
+            font-size:16px;
+            font-weight:600;
+            border-radius:50px;
+            text-decoration:none;
+            box-shadow:0 4px 12px rgba(0,0,0,0.2);">
+   Book Now
+</a>   
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 6 -->
+      <div class="card">
+        <img src="assets/img/evnt.jpg" alt="Events">
+        <div class="card-content">
+          <h3>Sakhumzi Restaurant Events</h3>
+          <p>We’ve hosted countless celebrations, and yours could be next. Whether it’s a family lunch, birthday, bridal shower, wedding, farewell, or company function, we’ve got space and atmosphere. Join us for an experience where food and vibe come together.</p>
+          <div class="card-buttons">
+            <button 
+            class="book-now" 
+            href="#contact"
+            style="
+            padding:12px 28px;
+            background:linear-gradient(135deg, #c5863a, #8f5b1a);
+            color:#fff;
+            font-family:Poppins, sans-serif;
+            font-size:16px;
+            font-weight:600;
+            border:none;
+            border-radius:50px;
+            cursor:pointer;
+            box-shadow:0 4px 12px rgba(0,0,0,0.2);
+            transition:0.3s ease;"
+            onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });">Enquire</button>
+
+            <a href="mailto:dine@sakhumzi.co.za" target="_blank" 
+            style="
+            display:inline-block;
+            padding:12px 28px;
+            background:linear-gradient(135deg, #c5863a, #8f5b1a);
+            color:#fff;
+            font-family:Poppins, sans-serif;
+            font-size:16px;
+            font-weight:600;
+            border-radius:50px;
+            text-decoration:none;
+            box-shadow:0 4px 12px rgba(0,0,0,0.2);">
+   Book Now
+</a>
+  
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Right Arrow -->
+    <button id="arrowRight" class="slide-arrow right" type="button" aria-label="Scroll right">&#10095;</button>
+
+  </div>
+</section>
+
+<script>
+  (function(){
+    const slider = document.getElementById('menuSlider');
+    const left = document.getElementById('arrowLeft');
+    const right = document.getElementById('arrowRight');
+
+    // Scroll distance = viewport-friendly (card width + gap)
+    const SCROLL_AMOUNT = 360;
+
+    // Defensive: if slider isn't found, don't error
+    if (!slider) return;
+
+    left.addEventListener('click', () => {
+      slider.scrollBy({ left: -SCROLL_AMOUNT, behavior: 'smooth' });
+    });
+
+    right.addEventListener('click', () => {
+      slider.scrollBy({ left: SCROLL_AMOUNT, behavior: 'smooth' });
+    });
+
+    // Optional: hide arrows when scroll cannot move further
+    function updateArrows() {
+      // small tolerance for fractional scrolls
+      const maxScrollLeft = slider.scrollWidth - slider.clientWidth - 1;
+      left.style.display = slider.scrollLeft > 5 ? 'block' : 'none';
+      right.style.display = slider.scrollLeft < maxScrollLeft ? 'block' : 'none';
+    }
+    slider.addEventListener('scroll', updateArrows);
+    window.addEventListener('resize', updateArrows);
+    // init
+    setTimeout(updateArrows, 100);
+  })();
+</script>
+
+
+<script>
+function scrollLeft() {
+  document.getElementById("menuSlider").scrollBy({
+    left: -400,
+    behavior: "smooth"
+  });
+}
+
+function scrollRight() {
+  document.getElementById("menuSlider").scrollBy({
+    left: 400,
+    behavior: "smooth"
+  });
+}
+</script>
+
+<!-- Bookings Section -->
+<section class="bookings-section" id="bookings">
+  <h1>BOOKINGS AT SAKHUMZI</h1>
+  <div class="booking-content">
+    <img src="assets/img/480248304_1027530669412142_7710536606932878897_n.jpeg" alt="Sakhumzi Bookings">
+    <div class="booking-text">
+      <h3>Celebrate at Sakhumzi Restaurant</h3>
+      <p>Plan your next unforgettable event at Sakhumzi Restaurant, where good food meets great vibes. Whether it’s a baby shower, birthday, anniversary, or corporate function — we’ve got the perfect space for every occasion.</p>
+      <p>Enjoy live entertainment, warm hospitality, and a true Soweto experience at the heart of Vilakazi Street. Let us make your special day extra memorable with delicious cuisine and lively energy all around.</p>
+      <p><strong>For birthdays, baby showers, bridal parties, and corporate bookings, kindly reach out to us on 011 536 1379 or <a href="mailto:dine@sakhumzi.co.za">dine@sakhumzi.co.za</a></strong> 🙂</strong></p>
+    </div>
+  </div>
+</section>
+
+
+<!-- Gallery Section -->
+<div class="gallery-section" id="gallery">
+  <h2>Our Gallery</h2>
+  <div class="gallery-wrapper">
+         <!-- Left Arrow -->
+    <button class="arrow left">&#10094;</button>
+    <div class="gallery-carousel">
+
+<div class="gallery-item"><img src="assets/img/1.jpg" alt="Gallery 7"></div>
+<div class="gallery-item"><img src="assets/img/2.jpg" alt="Gallery 8"></div>
+<div class="gallery-item"><img src="assets/img/3.jpg" alt="Gallery 8"></div>
+<div class="gallery-item"><img src="assets/img/4.jpg" alt="Gallery 7"></div>
+<div class="gallery-item"><img src="assets/img/5.jpg" alt="Gallery 8"></div>
+<div class="gallery-item"><img src="assets/img/6.jpg" alt="Gallery 8"></div>
+
+<div class="gallery-item"><img src="assets/img/champions-dining-at-sakhumzi-restaurant-1.jpg" alt="Gallery 1"></div>
+<div class="gallery-item"><img src="assets/img/champions-dining-at-sakhumzi-restaurant-2.jpg" alt="Gallery 2"></div>
+<div class="gallery-item"><img src="assets/img/champions-dining-at-sakhumzi-restaurant-3.jpg" alt="Gallery 3"></div>
+<div class="gallery-item"><img src="assets/img/champions-dining-at-sakhumzi-restaurant-4.jpg" alt="Gallery 4"></div>
+<div class="gallery-item"><img src="assets/img/champions-dining-at-sakhumzi-restaurant-5.jpg" alt="Gallery 5"></div>
+<div class="gallery-item"><img src="assets/img/champions-dining-at-sakhumzi-restaurant-6.jpg" alt="Gallery 6"></div>
+<div class="gallery-item"><img src="assets/img/champions-dining-at-sakhumzi-restaurant-7.jpg" alt="Gallery 7"></div>
+<div class="gallery-item"><img src="assets/img/champions-dining-at-sakhumzi-restaurant-8.jpg" alt="Gallery 8"></div>
+
+<div class="gallery-item"><img src="assets/img/sakhumzi-restaurant-soweto-african-cuisine-10.jpg" alt="Gallery 5"></div>
+<div class="gallery-item"><img src="assets/img/sakhumzi-restaurant-soweto-african-cuisine-11.jpg" alt="Gallery 6"></div>
+<div class="gallery-item"><img src="assets/img/sakhumzi-restaurant-soweto-african-cuisine-12.jpg" alt="Gallery 7"></div>
+<div class="gallery-item"><img src="assets/img/sakhumzi-restaurant-soweto-african-cuisine-13.jpg" alt="Gallery 8"></div>
+<div class="gallery-item"><img src="assets/img/sakhumzi-restaurant-soweto-african-cuisine-14.jpg" alt="Gallery 7"></div>
+<div class="gallery-item"><img src="assets/img/sakhumzi-restaurant-soweto-african-cuisine-15.jpg" alt="Gallery 8"></div>
+<div class="gallery-item"><img src="assets/img/sakhumzi-restaurant-soweto-african-cuisine-16.jpg" alt="Gallery 8"></div>
+
+<div class="gallery-item"><img src="assets/img/sakhumzi-restaurant-soweto-african-cuisine-1.jpg" alt="Gallery 11"></div>
+<div class="gallery-item"><img src="assets/img/sakhumzi-restaurant-soweto-african-cuisine-2.jpg" alt="Gallery 12"></div>
+<div class="gallery-item"><img src="assets/img/sakhumzi-restaurant-soweto-african-cuisine-3.jpg" alt="Gallery 13"></div>
+<div class="gallery-item"><img src="assets/img/sakhumzi-restaurant-soweto-african-cuisine-4.jpg" alt="Gallery 14"></div>
+
+<div class="gallery-item"><img src="assets/img/sakhumzi-restaurant-soweto-african-cuisine-6.jpg" alt="Gallery 16"></div>
+<div class="gallery-item"><img src="assets/img/sakhumzi-restaurant-soweto-african-cuisine-7.jpg" alt="Gallery 17"></div>
+<div class="gallery-item"><img src="assets/img/sakhumzi-restaurant-soweto-african-cuisine-8.jpg" alt="Gallery 18"></div>
+<div class="gallery-item"><img src="assets/img/sakhumzi-restaurant-soweto-african-cuisine-9.jpg" alt="Gallery 19"></div>
+<div class="gallery-item"><img src="assets/img/sakhumzi-buffet-soweto.jpg" alt="Gallery 20"></div>
+
+<div class="gallery-item"><img src="assets/img/sakhumzi-restaurant-zoo-lake-1.jpg" alt="Gallery 16"></div>
+<div class="gallery-item"><img src="assets/img/sakhumzi-restaurant-zoo-lake-2.jpg" alt="Gallery 17"></div>
+<div class="gallery-item"><img src="assets/img/sakhumzi-restaurant-zoo-lake-3.jpg" alt="Gallery 16"></div>
+<div class="gallery-item"><img src="assets/img/sakhumzi-restaurant-zoo-lake-4.jpg" alt="Gallery 17"></div>
+<div class="gallery-item"><img src="assets/img/sakhumzi-restaurant-zoo-lake-5.jpg" alt="Gallery 16"></div>
+<div class="gallery-item"><img src="assets/img/sakhumzi-restaurant-zoo-lake-6.jpg" alt="Gallery 17"></div>
+<div class="gallery-item"><img src="assets/img/sakhumzi-restaurant-zoo-lake-7.jpg" alt="Gallery 16"></div>
+<div class="gallery-item"><img src="assets/img/sakhumzi-restaurant-zoo-lake-8.jpg" alt="Gallery 17"></div>
+
+<div class="gallery-item"><img src="assets/img/event-birthday.jpg" alt="Gallery 17"></div>
+    </div>
+     <button class="arrow right">&#10095;</button>
+  </div>
+</div>
+
+<script>
+
+document.addEventListener('DOMContentLoaded', function() {
+    const carousel = document.querySelector('.gallery-carousel');
+    const leftBtn = document.querySelector('.arrow.left');
+    const rightBtn = document.querySelector('.arrow.right');
+
+    leftBtn.addEventListener('click', () => {
+        carousel.scrollBy({ left: -270, behavior: 'smooth' });
+    });
+
+    rightBtn.addEventListener('click', () => {
+        carousel.scrollBy({ left: 270, behavior: 'smooth' });
+    });
+});
+</script>
+
+<section class="testimonials-section" id="testimonials">
+  <h2>What Our Customers Say</h2>
+  <h5>Your feedback matters. Leave us a Google review and help us refine the Sakhumzi experience for every guest.</h5>
+
+  <div class="testimonial-slider">
+
+    <!-- Left arrow -->
+    <button class="arrow-btn left" onclick="prevTestimonial()">&#10094;</button>
+
+    <div class="slides-container">
+
+      <div class="slide active">
+        <div class="testimonial-card">
+          <p>“I am very pleased with the service we received, the staff (waiter Lebo) was very efficient and helpful. She's so polite and shows respect at all times. We ate from the buffet, pity I didn't take pictures but the food was very tasty and fresh. I will definitely come again”</p>
+          <h4>Masana Maluleke</h4>
+          <div class="stars">★★★★★</div>
+        </div>
+      </div>
+
+      <div class="slide">
+        <div class="testimonial-card">
+          <p>“We hosted our Women’s event with 30 guests at the restaurant. The beautifully decorated tables and attentive staff made it special. The quiet atmosphere gave us the space to ourselves. The buffet was delicious, with the exception of the mogodu dish.”</p>
+          <h4>Ntombi Kholwane</h4>
+          <div class="stars">★★★★★</div>
+        </div>
+      </div>
+
+      <div class="slide">
+        <div class="testimonial-card">
+          <p>““She likes us” “was the top-tier comment my kids made. The waitress, Lebo, really knows her job. I'll definitely recommend this place to my family and friends - I'm already a loyal customer. Excellent service today, great staff you have there!”</p>
+          <h4>Thenjiwe Mswane</h4>
+          <div class="stars">★★★★★</div>
+        </div>
+      </div>
+
+      <div class="slide">
+        <div class="testimonial-card">
+          <p>“I got to the place when they closed I wanted to get food for my family they asked the kitchen to please dish up what an amazing experience I appreciate the they value their customers.”</p>
+          <h4>William Kekana</h4>
+          <div class="stars">★★★★★</div>
+        </div>
+      </div>
+
+      <div class="slide">
+        <div class="testimonial-card">
+          <p>“A very beautiful place and atmosphere... I can visit Sakhumzi again.”</p>
+          <h4>Buyi Buyisile</h4>
+          <div class="stars">★★★★★</div>
+        </div>
+      </div>
+
+      <div class="slide">
+        <div class="testimonial-card">
+          <p>“Beautiful setup on Sundays. Malamohodu and Tlhakwana was too delish Clean bathrooms. But fix the toilet seats that are doing jika Manila, Ska tetshegisa ka Machina. But otherwise, THEE BEST!!!*chefskiss*”</p>
+          <h4>Keleabetswe Motong</h4>
+          <div class="stars">★★★★★</div>
+        </div>
+      </div>
+
+      <div class="slide">
+        <div class="testimonial-card">
+          <p>“It was a beautiful set for my brothers surprise party. Thank you for hosting us with your excellent service.”</p>
+          <h4>Buhle Mhlongo</h4>
+          <div class="stars">★★★★★</div>
+        </div>
+      </div>
+
+      <div class="slide">
+        <div class="testimonial-card">
+          <p>“Perfect for enjoying the sun go down over Soweto. Epic view!”</p>
+          <h4>Olivia La Grange</h4>
+          <div class="stars">★★★★★</div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Right arrow -->
+    <button class="arrow-btn right" onclick="nextTestimonial()">&#10095;</button>
+
+  </div>
+</section>
+
+<script>
+let currentIndex = 0;
+
+function showSlide(index) {
+  const slides = document.querySelectorAll(".slide");
+  const container = document.querySelector(".slides-container");
+
+  if (index >= slides.length) currentIndex = 0;
+  if (index < 0) currentIndex = slides.length - 1;
+
+  container.style.transform = `translateX(-${currentIndex * 100}%)`;
+}
+
+function nextTestimonial() {
+  currentIndex++;
+  showSlide(currentIndex);
+}
+
+function prevTestimonial() {
+  currentIndex--;
+  showSlide(currentIndex);
+}
+</script>
+
+<!-- Contact Us Section -->
+<section class="contact-section" id="contact">
+  <h2>CONTACT US</h2>
+
+   <br/>
+
+  <div class="contact-locations">
+
+    <!-- Location 1 -->
+    <div class="location-card">
+      <div class="icon"><i class="fa-solid fa-location-dot"></i></div>
+      <div class="details">
+        <h3>Sakhumzi Soweto:</h3>
+        <p>6980 Vilakazi Street<br>Orlando West<br>Soweto, 1804</p>
+        <p>(011) 536 1379</p>
+        <p>062 106 5118 WhatsApp</p>
+        <p><strong><a href="mailto:dine@sakhumzi.co.za">dine@sakhumzi.co.za</a></strong></p>
+      </div>
+    </div>
+
+    <!-- Location 2 -->
+    <div class="location-card">
+      <div class="icon"><i class="fa-solid fa-location-dot"></i></div>
+      <div class="details">
+        <h3>Sakhumzi Phefeni:</h3>
+        <p>Cnr Pela Road & Ndlovu Road, Dube<br>Soweto, 1804</p>
+        <p>(072) 210 9423</p>
+        <p><strong><a href="mailto:phefeni@sakhumzi.co.za">phefeni@sakhumzi.co.za</a></strong></p>
+      </div>
+    </div>
+
+    <!-- Location 3 -->
+    <div class="location-card">
+      <div class="icon"><i class="fa-solid fa-location-dot"></i></div>
+      <div class="details">
+        <h3>Sakhumzi Zoo Lake:</h3>
+        <p>1 Prince of Wales Drive, Parkview<br>Johannesburg, 1804</p> 
+        <p>(010) 085 1889</p>
+        <p><strong><a href="mailto:zoolake@sakhumzi.co.za">zoolake@sakhumzi.co.za</a></strong></p>
+      </div>
+    </div>
+
+    <!-- Table bookings -->
+    <div class="location-card">
+      <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+      <div class="details">
+        <h3>Table Bookings:</h3>
+        <p>Contact our stores directly for booking enquiries, events, menus and information you may require.</p>
+      </div>
+    </div>
+
+  
+  <br/>
+  <!-- Optional: Book button -->
+  <div class="book-btn-wrapper">
+    <a class="book-btn" href="mailto:dine@sakhumzi.co.za">Book Now</a>
+  </div>
+  </div>
+
+</section>
+
+<!-- Footer Section -->
+<footer class="footer">
+  <div class="footer-container">
+    <!-- About -->
+    <div class="footer-about">
+      <img src="assets/img/logo.png" alt="Sakhumzi Logo" class="footer-logo">
+      <h2>Sakhumzi Restaurant</h2>
+      <p>Experience the warmth, culture and flavours of authentic South African dining.</p>
+    </div>
+
+    <!-- Links -->
+    <div class="footer-links">
+      <h3>Explore</h3>
+      <ul>
+        <li><a href="#about-section">About Us</a></li>
+        <li><a href="#menus">Menu</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact -->
+    <div class="footer-contact">
+      <h3>Contact</h3>
+      <p>6980 Vilakazi Street Orlando West Soweto, 1804</p>
+      <p><strong>Email: <a href="mailto:dine@sakhumzi.co.za">dine@sakhumzi.co.za</a></strong></p>
+      <p><strong>Call:  </strong> <a href="tel:0115361379">+27 11 536 1379</a></p>
+    </div>
+  </div>
+
+  <!-- Bottom Bar Full Width -->
+<div class="footer-bottom">
+  <div class="footer-left">
+    <p>Copyright © 2025 Sakhumzi Restaurant</p>
+    <p style="opacity: 0.8; font-size: 13px;">
+      Website Design & Maintenance by 
+      <a href="https://philani-khumalo-portfolio-main.vercel.app/" target="_blank">
+        Nhlakanipho Philani Khumalo
+      </a>
+    </p>
+  </div>
+
+  <div class="footer-right">
+    <div class="social-icons">
+      <a href="https://www.facebook.com/SakhumziSoweto/"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.instagram.com/sakhumzirestaurant/"><i class="fab fa-instagram"></i></a>
+      <a href="https://x.com/sakhumzisoweto/"><i class="fab fa-x"></i></a>
+      <a href="https://wa.me/27621065118" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    </div>
+  </div>
+</div>
+
+</footer>
+
+</body>
+</html>
