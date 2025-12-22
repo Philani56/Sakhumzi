@@ -364,7 +364,7 @@
     </div>
 
     <div class="menu-1">
-      <a href="pdf/Phefeni_Menu.pdf" target="_blank" class="read-more">Our Menu</a>
+      <a href="pdf/Sakhumzi-Food-Menu.pdf" target="_blank" class="read-more">Our Menu</a>
     </div>
 
     <!-- Contact Section -->
@@ -487,12 +487,13 @@
     flex: 0.8;
   }
   
-  .zoolake-box img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-  }
+   .zoolake-box img {
+  max-width: 380px; /* adjust size */
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
   
   .zoolake-text, .zoolake-left {
     flex: 1;
@@ -573,7 +574,7 @@
   .contact-section1 {
     margin: 40px 0;
     padding: 30px 15px;
-    background: #f9f9f9;
+     
     border-radius: 8px;
   }
   
@@ -687,14 +688,27 @@
       flex-direction: column;
     }
     
-    .zoolake-box, .zoolake-text, .zoolake-left {
-      min-width: 100%;
-      padding: 0 5px;
-    }
+ 
     
-    .zoolake-box img {
-      border-radius: 6px;
-    }
+    /* Text always first */
+  .zoolake-text,
+  .zoolake-left {
+    order: 1;
+  }
+
+  /* Image always below text */
+  .zoolake-box {
+    order: 2;
+    display: flex;
+    justify-content: center;
+  }
+
+  .zoolake-box img {
+    max-width: 280px;
+    width: 100%;
+    margin-top: 12px;
+  }
+
     
     .zoolake-text h3, .zoolake-left h3 {
       font-size: 1.2rem;
@@ -1059,6 +1073,7 @@
   .slide-arrow { padding:8px 10px; font-size:18px; }
 }
 
+
 </style>
 
 <section class="menu-text" id="menus">
@@ -1079,21 +1094,44 @@
           <h3>Sakhumzi Food Menu</h3>
           <p>Enjoy authentic African dining at Sakhumzi Zoolake. Tuck into our delicious lunch or dinner buffet with vibrant décor and an atmosphere. Every meal is a celebration of culture, flavour, and togetherness.</p>
           <div class="card-buttons">
-            <a href="pdf/Sakhumzi-Food-Menu.pdf" target="_blank" class="read-more">Read More</a>
-                        <a href="mailto:dine@sakhumzi.co.za" target="_blank" 
-            style="
-            display:inline-block;
-            padding:12px 28px;
-            background:linear-gradient(135deg, #c5863a, #8f5b1a);
-            color:#fff;
-            font-family:Poppins, sans-serif;
-            font-size:16px;
-            font-weight:600;
-            border-radius:50px;
-            text-decoration:none;
-            box-shadow:0 4px 12px rgba(0,0,0,0.2);">
-   Book Now
+            <a href="pdf/Sakhumzi-Food-Menu.pdf"
+   target="_blank"
+   style="
+     display:inline-flex;
+     align-items:center;
+     justify-content:center;
+     padding:clamp(8px, 2.5vw, 12px) clamp(16px, 5vw, 24px);
+     font-family:'Poppins', sans-serif;
+     font-size:clamp(13px, 4vw, 15px);
+     font-weight:500;
+     color:#8f5b1a;
+     text-decoration:none;
+     border:2px solid #8f5b1a;
+     border-radius:999px;
+     white-space:nowrap;
+     box-sizing:border-box;
+     transition:all 0.3s ease;
+   ">
+   Read More
 </a>
+
+     <a href="mailto:dine@sakhumzi.co.za" target="_blank" 
+     style="
+     display:inline-flex;
+     align-items:center;
+     justify-content:center;
+     padding:clamp(10px, 2.5vw, 14px) clamp(20px, 5vw, 32px);
+     background:linear-gradient(135deg, #c5863a, #8f5b1a);
+     color:#ffffff;
+     font-family:'Poppins', sans-serif;
+     font-size:clamp(14px, 4vw, 16px);
+     font-weight:600;
+     border-radius:999px;
+     text-decoration:none;
+     box-shadow:0 6px 16px rgba(0,0,0,0.25);
+     white-space:nowrap;
+     max-width:100%;
+     box-sizing:border-box;">Book Now</a>
           </div>
         </div>
       </div>
@@ -1105,21 +1143,44 @@
           <h3>Sakhumzi Legendary Buffet</h3>
           <p>Discover the vibrant flavours of Sakhumzi Zoolake with our signature buffet menu a perfect blend of African cuisine, warm ambiance, and great company. Come hungry, leave inspired by the true taste of Soweto.</p>
           <div class="card-buttons">
-            <a href="pdf/DOC-20251120-WA0010..pdf" target="_blank" class="read-more">Read More</a>
+            <a href="pdf/Sakhumzi-Food-Menu.pdf"
+   target="_blank"
+   style="
+     display:inline-flex;
+     align-items:center;
+     justify-content:center;
+     padding:clamp(8px, 2.5vw, 12px) clamp(16px, 5vw, 24px);
+     font-family:'Poppins', sans-serif;
+     font-size:clamp(13px, 4vw, 15px);
+     font-weight:500;
+     color:#8f5b1a;
+     text-decoration:none;
+     border:2px solid #8f5b1a;
+     border-radius:999px;
+     white-space:nowrap;
+     box-sizing:border-box;
+     transition:all 0.3s ease;
+   ">
+   Read More
+</a>
+
                         <a href="mailto:dine@sakhumzi.co.za" target="_blank" 
-            style="
-            display:inline-block;
-            padding:12px 28px;
-            background:linear-gradient(135deg, #c5863a, #8f5b1a);
-            color:#fff;
-            font-family:Poppins, sans-serif;
-            font-size:16px;
-            font-weight:600;
-            border-radius:50px;
-            text-decoration:none;
-            box-shadow:0 4px 12px rgba(0,0,0,0.2);">
-   Book Now
-</a>   
+     style="
+     display:inline-flex;
+     align-items:center;
+     justify-content:center;
+     padding:clamp(10px, 2.5vw, 14px) clamp(20px, 5vw, 32px);
+     background:linear-gradient(135deg, #c5863a, #8f5b1a);
+     color:#ffffff;
+     font-family:'Poppins', sans-serif;
+     font-size:clamp(14px, 4vw, 16px);
+     font-weight:600;
+     border-radius:999px;
+     text-decoration:none;
+     box-shadow:0 6px 16px rgba(0,0,0,0.25);
+     white-space:nowrap;
+     max-width:100%;
+     box-sizing:border-box;">Book Now</a>  
           </div>
         </div>
       </div>
@@ -1131,21 +1192,44 @@
           <h3>Sakhumzi Wine List</h3>
           <p>Explore our Sakhumzi Wine List, carefully offering a selection of fine wines to complement your dining experience. From smooth reds to crisp whites, every bottle is thoughtfully chosen to elevate experiences at Sakhumzi.</p>
           <div class="card-buttons">
-            <a href="pdf/Sakhumzi-Zoolake-Wine.pdf" target="_blank" class="read-more">Read More</a>
-                        <a href="mailto:dine@sakhumzi.co.za" target="_blank" 
-            style="
-            display:inline-block;
-            padding:12px 28px;
-            background:linear-gradient(135deg, #c5863a, #8f5b1a);
-            color:#fff;
-            font-family:Poppins, sans-serif;
-            font-size:16px;
-            font-weight:600;
-            border-radius:50px;
-            text-decoration:none;
-            box-shadow:0 4px 12px rgba(0,0,0,0.2);">
-   Book Now
+            <a href="pdf/Sakhumzi-Food-Menu.pdf"
+   target="_blank"
+   style="
+     display:inline-flex;
+     align-items:center;
+     justify-content:center;
+     padding:clamp(8px, 2.5vw, 12px) clamp(16px, 5vw, 24px);
+     font-family:'Poppins', sans-serif;
+     font-size:clamp(13px, 4vw, 15px);
+     font-weight:500;
+     color:#8f5b1a;
+     text-decoration:none;
+     border:2px solid #8f5b1a;
+     border-radius:999px;
+     white-space:nowrap;
+     box-sizing:border-box;
+     transition:all 0.3s ease;
+   ">
+   Read More
 </a>
+
+                        <a href="mailto:dine@sakhumzi.co.za" target="_blank" 
+     style="
+     display:inline-flex;
+     align-items:center;
+     justify-content:center;
+     padding:clamp(10px, 2.5vw, 14px) clamp(20px, 5vw, 32px);
+     background:linear-gradient(135deg, #c5863a, #8f5b1a);
+     color:#ffffff;
+     font-family:'Poppins', sans-serif;
+     font-size:clamp(14px, 4vw, 16px);
+     font-weight:600;
+     border-radius:999px;
+     text-decoration:none;
+     box-shadow:0 6px 16px rgba(0,0,0,0.25);
+     white-space:nowrap;
+     max-width:100%;
+     box-sizing:border-box;">Book Now</a>
           </div>
         </div>
       </div>
@@ -1158,19 +1242,22 @@
           <p>We’d love to warmly host you and your team for your corporate year-end. Let us take care of the meals and the experience while you enjoy the occasion with your team.</p>
           <div class="card-buttons">
                         <a href="mailto:dine@sakhumzi.co.za" target="_blank" 
-            style="
-            display:inline-block;
-            padding:12px 28px;
-            background:linear-gradient(135deg, #c5863a, #8f5b1a);
-            color:#fff;
-            font-family:Poppins, sans-serif;
-            font-size:16px;
-            font-weight:600;
-            border-radius:50px;
-            text-decoration:none;
-            box-shadow:0 4px 12px rgba(0,0,0,0.2);">
-   Book Now
-</a>
+     style="
+     display:inline-flex;
+     align-items:center;
+     justify-content:center;
+     padding:clamp(10px, 2.5vw, 14px) clamp(20px, 5vw, 32px);
+     background:linear-gradient(135deg, #c5863a, #8f5b1a);
+     color:#ffffff;
+     font-family:'Poppins', sans-serif;
+     font-size:clamp(14px, 4vw, 16px);
+     font-weight:600;
+     border-radius:999px;
+     text-decoration:none;
+     box-shadow:0 6px 16px rgba(0,0,0,0.25);
+     white-space:nowrap;
+     max-width:100%;
+     box-sizing:border-box;">Book Now</a>
           </div>
         </div>
       </div>
@@ -1183,19 +1270,22 @@
           <p>Looking for a space to host a yoga class or fitness activity? We’ve got you. At Sakhumzi Zoo Lake, we offer a welcoming spot for fitness fans. After the workout, enjoy our breakfast special to refuel.</p>
           <div class="card-buttons">
                         <a href="mailto:dine@sakhumzi.co.za" target="_blank" 
-            style="
-            display:inline-block;
-            padding:12px 28px;
-            background:linear-gradient(135deg, #c5863a, #8f5b1a);
-            color:#fff;
-            font-family:Poppins, sans-serif;
-            font-size:16px;
-            font-weight:600;
-            border-radius:50px;
-            text-decoration:none;
-            box-shadow:0 4px 12px rgba(0,0,0,0.2);">
-   Book Now
-</a>   
+     style="
+     display:inline-flex;
+     align-items:center;
+     justify-content:center;
+     padding:clamp(10px, 2.5vw, 14px) clamp(20px, 5vw, 32px);
+     background:linear-gradient(135deg, #c5863a, #8f5b1a);
+     color:#ffffff;
+     font-family:'Poppins', sans-serif;
+     font-size:clamp(14px, 4vw, 16px);
+     font-weight:600;
+     border-radius:999px;
+     text-decoration:none;
+     box-shadow:0 6px 16px rgba(0,0,0,0.25);
+     white-space:nowrap;
+     max-width:100%;
+     box-sizing:border-box;">Book Now</a>
           </div>
         </div>
       </div>
@@ -1211,33 +1301,39 @@
             class="book-now" 
             href="#contact"
             style="
-            padding:12px 28px;
-            background:linear-gradient(135deg, #c5863a, #8f5b1a);
-            color:#fff;
-            font-family:Poppins, sans-serif;
-            font-size:16px;
-            font-weight:600;
-            border:none;
-            border-radius:50px;
-            cursor:pointer;
-            box-shadow:0 4px 12px rgba(0,0,0,0.2);
-            transition:0.3s ease;"
-            onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });">Enquire</button>
-
-            <a href="mailto:dine@sakhumzi.co.za" target="_blank" 
-            style="
-            display:inline-block;
-            padding:12px 28px;
-            background:linear-gradient(135deg, #c5863a, #8f5b1a);
-            color:#fff;
-            font-family:Poppins, sans-serif;
-            font-size:16px;
-            font-weight:600;
-            border-radius:50px;
-            text-decoration:none;
-            box-shadow:0 4px 12px rgba(0,0,0,0.2);">
-   Book Now
-</a>
+          display:inline-flex;
+     align-items:center;
+     justify-content:center;
+     padding:clamp(10px, 2.5vw, 14px) clamp(20px, 5vw, 32px);
+     background:linear-gradient(135deg, #c5863a, #8f5b1a);
+     color:#ffffff;
+     font-family:'Poppins', sans-serif;
+     font-size:clamp(14px, 4vw, 16px);
+     font-weight:600;
+     border-radius:999px;
+     text-decoration:none;
+     box-shadow:0 6px 16px rgba(0,0,0,0.25);
+     white-space:nowrap;
+     max-width:100%;
+     box-sizing:border-box;"
+     onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });">Enquire</button>
+     <a href="mailto:dine@sakhumzi.co.za" target="_blank" 
+     style="
+     display:inline-flex;
+     align-items:center;
+     justify-content:center;
+     padding:clamp(10px, 2.5vw, 14px) clamp(20px, 5vw, 32px);
+     background:linear-gradient(135deg, #c5863a, #8f5b1a);
+     color:#ffffff;
+     font-family:'Poppins', sans-serif;
+     font-size:clamp(14px, 4vw, 16px);
+     font-weight:600;
+     border-radius:999px;
+     text-decoration:none;
+     box-shadow:0 6px 16px rgba(0,0,0,0.25);
+     white-space:nowrap;
+     max-width:100%;
+     box-sizing:border-box;">Book Now</a>
   
           </div>
         </div>
@@ -1475,6 +1571,69 @@ document.addEventListener('DOMContentLoaded', function() {
   </div>
 </section>
 
+<!-- Contact Us Section -->
+<section class="contact-section" id="contact">
+  <h2>CONTACT US</h2>
+
+   <br/>
+
+  <div class="contact-locations">
+
+    <!-- Location 1 -->
+    <div class="location-card">
+      <div class="icon"><i class="fa-solid fa-location-dot"></i></div>
+      <div class="details">
+        <h3>Sakhumzi Soweto:</h3>
+        <p>6980 Vilakazi Street<br>Orlando West<br>Soweto, 1804</p>
+        <a href="https://wa.me/27621065118" target="_blank" class="whatsapp-link">
+  062 106 5118 WhatsApp
+</a>
+
+        <p><strong><a href="mailto:dine@sakhumzi.co.za">dine@sakhumzi.co.za</a></strong></p>
+      </div>
+    </div>
+
+    <!-- Location 2 -->
+    <div class="location-card">
+      <div class="icon"><i class="fa-solid fa-location-dot"></i></div>
+      <div class="details">
+        <h3>Sakhumzi Phefeni:</h3>
+        <p>Cnr Pela Road & Ndlovu Road, Dube<br>Soweto, 1804</p>
+         <p><a href="tel:(072) 210 9423">(072) 210 9423</a></p>
+        <p><strong><a href="mailto:phefeni@sakhumzi.co.za">phefeni@sakhumzi.co.za</a></strong></p>
+      </div>
+    </div>
+
+    <!-- Location 3 -->
+    <div class="location-card">
+      <div class="icon"><i class="fa-solid fa-location-dot"></i></div>
+      <div class="details">
+        <h3>Sakhumzi Zoo Lake:</h3>
+        <p>1 Prince of Wales Drive, Parkview<br>Johannesburg, 1804</p> 
+        <p><a href="tel:(010) 085 1889">(010) 085 1889</a></p>
+        <p><strong><a href="mailto:zoolake@sakhumzi.co.za">zoolake@sakhumzi.co.za</a></strong></p>
+      </div>
+    </div>
+
+    <!-- Table bookings -->
+    <div class="location-card">
+      <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+      <div class="details">
+        <h3>Table Bookings:</h3>
+        <p>Contact our stores directly for booking enquiries, events, menus and information you may require.</p>
+      </div>
+    </div>
+
+  
+  <br/>
+  <!-- Optional: Book button -->
+  <div class="book-btn-wrapper">
+    <a class="book-btn" href="mailto:dine@sakhumzi.co.za">Book Now</a>
+  </div>
+  </div>
+
+</section>
+
 <script>
 let currentIndex = 0;
 
@@ -1499,66 +1658,6 @@ function prevTestimonial() {
 }
 </script>
 
-<!-- Contact Us Section -->
-<section class="contact-section" id="contact">
-  <h2>CONTACT US</h2>
-
-   <br/>
-
-  <div class="contact-locations">
-
-    <!-- Location 1 -->
-    <div class="location-card">
-      <div class="icon"><i class="fa-solid fa-location-dot"></i></div>
-      <div class="details">
-        <h3>Sakhumzi Soweto:</h3>
-        <p>6980 Vilakazi Street<br>Orlando West<br>Soweto, 1804</p>
-        <p>(011) 536 1379</p>
-        <p>062 106 5118 WhatsApp</p>
-        <p><strong><a href="mailto:dine@sakhumzi.co.za">dine@sakhumzi.co.za</a></strong></p>
-      </div>
-    </div>
-
-    <!-- Location 2 -->
-    <div class="location-card">
-      <div class="icon"><i class="fa-solid fa-location-dot"></i></div>
-      <div class="details">
-        <h3>Sakhumzi Phefeni:</h3>
-        <p>Cnr Pela Road & Ndlovu Road, Dube<br>Soweto, 1804</p>
-        <p>(072) 210 9423</p>
-        <p><strong><a href="mailto:phefeni@sakhumzi.co.za">phefeni@sakhumzi.co.za</a></strong></p>
-      </div>
-    </div>
-
-    <!-- Location 3 -->
-    <div class="location-card">
-      <div class="icon"><i class="fa-solid fa-location-dot"></i></div>
-      <div class="details">
-        <h3>Sakhumzi Zoo Lake:</h3>
-        <p>1 Prince of Wales Drive, Parkview<br>Johannesburg, 1804</p> 
-        <p>(010) 085 1889</p>
-        <p><strong><a href="mailto:zoolake@sakhumzi.co.za">zoolake@sakhumzi.co.za</a></strong></p>
-      </div>
-    </div>
-
-    <!-- Table bookings -->
-    <div class="location-card">
-      <div class="icon"><i class="fa-solid fa-envelope"></i></div>
-      <div class="details">
-        <h3>Table Bookings:</h3>
-        <p>Contact our stores directly for booking enquiries, events, menus and information you may require.</p>
-      </div>
-    </div>
-
-  
-  <br/>
-  <!-- Optional: Book button -->
-  <div class="book-btn-wrapper">
-    <a class="book-btn" href="mailto:dine@sakhumzi.co.za">Book Now</a>
-  </div>
-  </div>
-
-</section>
 
 <!-- Footer Section -->
 <footer class="footer">
